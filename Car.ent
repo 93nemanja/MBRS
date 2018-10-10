@@ -1,0 +1,13 @@
+
+entity Car {
+  ID : int       
+  Brand: string    
+  Model: string
+  Engine: string
+  YearOfCreation: DateTime  
+}                     
+
+entity GearBox {
+  ID: int
+  Transmission: string
+}
