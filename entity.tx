@@ -1,14 +1,21 @@
 
 EntityModel:          
-    entities+=Entity        
+    entities+=Entity    
 ;
 
 Entity:
     'entity' name=ID '{'
         properties+=Property 
-    '}'
+    '}' |
+    'html' naziv=ID '['
+        tags+=Tag
+    ']'
 ;
 
 Property:
     name=ID ':' tip=ID
+;
+
+Tag:
+    naziv=ID ':' sajt=STRING
 ;
