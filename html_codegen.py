@@ -10,7 +10,7 @@ def main(debug=False):
     this_folder = dirname(__file__)
     entity_mm = get_entity_mm(debug)
 
-    Car_model = entity_mm.model_from_file(join(this_folder, 'html.ent'))
+    Car_model = entity_mm.model_from_file(join(this_folder, 'Car.ent'))
     srcgen_folder = join(this_folder, 'srcgen')
     if not exists(srcgen_folder):
         mkdir(srcgen_folder)

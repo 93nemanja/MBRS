@@ -1,6 +1,6 @@
 
 entity Car {
-  Prea : int       
+  ID : int       
   Brand: string    
   Model: string
   Engine: string
